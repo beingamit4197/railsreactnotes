@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: railsreactnotes_production
-  username: railsreactnotes
-  password: <%= ENV["RAILSREACTNOTES_DATABASE_PASSWORD"] %>
+ url: <%= ENV["MY_APP_DATABASE_URL"] %>
